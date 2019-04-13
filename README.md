@@ -1,5 +1,5 @@
 # kubepacket WIP
-Count kubernetes pod packets. Enable using annotations.
+Count kubernetes pod packets. Enable using annotations. Kubernetes integration not yet started.
 
 ## packet count metric example
 
