@@ -5,3 +5,7 @@ Count kubernetes pod packets. Enable using annotations. Kubernetes integration n
 
     packet_count{dst_ip="192.168.1.27",dst_port="8080",proto="tcp",src_ip="192.168.1.27",src_port="dynamic"} 176
     packet_count{dst_ip="192.168.1.27",dst_port="dynamic",proto="tcp",src_ip="192.168.1.27",src_port="8080"} 134
+
+## Kubernetes integration
+
+Plan to integrate pod annotation watches by using https://github.com/bitnami-labs/kubewatch as a base.
