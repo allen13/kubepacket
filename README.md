@@ -1,5 +1,6 @@
 # kubepacket WIP
-Count kubernetes pod packets. Enable using annotations. Kubernetes integration not yet started.
+
+Count kubernetes pod packets by adding annotations
 
 ### packet count metric example
 
@@ -8,4 +9,4 @@ Count kubernetes pod packets. Enable using annotations. Kubernetes integration n
 
 ### kubernetes integration
 
-Plan to integrate pod annotation watches by using https://github.com/bitnami-labs/kubewatch as a base.
+Based controll on the excellent controller from https://github.com/bitnami-labs/kubewatch

@@ -3,6 +3,7 @@ package main
 import (
 	"time"
 
+	"github.com/allen13/kubepacket/pkg/controller"
 	"github.com/allen13/kubepacket/pkg/packet"
 	"github.com/allen13/kubepacket/pkg/prom"
 )
@@ -15,5 +16,5 @@ func main() {
 	go prom.StartPrometheusEndpoint()
 	flush, _ := time.ParseDuration("2m")
 	go packet.Capture("lo", "", SNAPLEN, flush)
-	packet.Capture("enp4s0", "", SNAPLEN, flush)
+	controller.Start()
 }
